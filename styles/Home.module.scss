@@ -1,0 +1,187 @@
+$colors: (
+    movie: #ffffff,
+    picbed: #222222,
+);
+
+.introContainer {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 888px) {
+        flex-direction: column;
+    }
+    width: 100%;
+    height: 100vh;
+    .mymovieContainer {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: rgb(179, 73, 73);
+        background-image: url(../public/cinema-1241422_1920.jpg);
+        background-position: center;
+        background-size: cover;
+        color: map-get($colors, movie);
+        .introMymovie {
+            z-index: 2;
+            h1 {
+                width: 400px;
+                height: 60px;
+                padding-top: 5px;
+                border: 3px solid map-get($colors, movie);
+                cursor: default;
+                animation: popup 1s;
+                font-size: 2.5em;
+                @media screen and (max-width: 1200px) {
+                    width: 320px;
+                    height: 45px;
+                    font-size: 2em;
+                }
+            }
+            button {
+                margin-top: 70px;
+                @media screen and (max-width: 1200px) {
+                    font-size: 1em;
+                }
+                @media screen and (max-width: 888px) {
+                    margin-top: 30px;
+                }
+                font-size: 1.5em;
+                font-family: inherit;
+                background-color: rgba(0, 73, 73, 0.1);
+                color: map-get($colors, movie);
+                cursor: pointer;
+                border: none;
+                transition: background-color 1s;
+                animation: showup 1s;
+            }
+            button:hover {
+                background-color: map-get($colors, picbed);
+            }
+            i {
+                margin-top: 100px;
+                @media screen and (max-width: 888px) {
+                    margin-top: 50px;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: showup 1s;
+                img:hover {
+                    animation: simpleBtnchange 500ms ease-in-out;
+                }
+            }
+        }
+    }
+    .mymovieContainer::after {
+        content: "";
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(220, 20, 60, 0.5);
+        box-shadow: inset 5px 5px 50px #222222, inset -30px -5px 50px #222222;
+        @media screen and (max-width: 888px) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            box-shadow: none;
+        }
+    }
+
+    .picbedContainer {
+        flex: 1;
+        // background-color: rgb(150, 197, 250);
+        background-image: url(../public/poster-mockup-2853835_1920.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .introPicbed {
+            z-index: 2;
+            h1 {
+                width: 400px;
+                height: 60px;
+                padding-top: 5px;
+                border: 3px solid map-get($colors, picbed);
+                cursor: default;
+                animation: popup 1s;
+                font-size: 2.5em;
+                @media screen and (max-width: 1200px) {
+                    width: 320px;
+                    height: 45px;
+                    font-size: 2em;
+                }
+            }
+            button {
+                margin-top: 70px;
+                @media screen and (max-width: 1200px) {
+                    font-size: 1em;
+                }
+                @media screen and (max-width: 888px) {
+                    margin-top: 30px;
+                }
+                font-size: 1.5em;
+                font-family: inherit;
+                background-color: rgba(158, 209, 216, 0.2);
+                transition: background-color 1s;
+                color: map-get($colors, picbed);
+                cursor: pointer;
+                border: none;
+                animation: showup 1s;
+            }
+            button:hover {
+                background-color: map-get($colors, movie);
+            }
+            i {
+                margin-top: 100px;
+                @media screen and (max-width: 888px) {
+                    margin-top: 50px;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: showup 1s;
+                img:hover {
+                    animation: simpleBtnchange 500ms ease-in-out;
+                }
+            }
+        }
+    }
+    .picbedContainer::after {
+        content: "";
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        background: rgba(158, 209, 216, 0.8);
+        box-shadow: inset 30px 5px 50px #222222, inset -5px -5px 10px #222222;
+        @media screen and (max-width: 888px) {
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            box-shadow: none;
+        }
+    }
+
+    .animationContainer {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        @media screen and (max-width: 888px) {
+            top: 50%;
+            left: 10%;
+            width: 150%;
+        }
+    }
+}
