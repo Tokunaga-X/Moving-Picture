@@ -4,16 +4,16 @@
 
 ## 现状展示
 
-<img src="./src/images/readme.png" width="70%" />
+<img src="./public/readme.png" width="70%" />
 
 ## 用到的库
 
-- React (Router/Redux,用于项目构建)
-- Lottie (用于页面动画)
-- Swiper (用于轮播图)
-- 阿里图标矢量库 (用于图标资源)
-- marker (用于 markdown 展示)
-- ...
+-   React (Router/Redux,用于项目构建)
+-   Lottie (用于页面动画)
+-   Swiper (用于轮播图)
+-   阿里图标矢量库 (用于图标资源)
+-   marker (用于 markdown 展示)
+-   ...
 
 ## 下载本地使用
 

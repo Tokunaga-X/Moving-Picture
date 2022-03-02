@@ -5,7 +5,7 @@ import douban from "../../public/douban.png"
 const IntroMovie: NextPage = function () {
     return (
         <div className="introMymovie">
-            <h1>My-movie-log | xyc</h1>
+            <h1>My-movie-log</h1>
             <a href="/page">
                 <button>Learn more</button>
             </a>
