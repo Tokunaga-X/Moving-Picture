@@ -19,3 +19,5 @@
 
 1. npm install
 2. npm run start
+
+TODO：Replace it with next and tailwind css
