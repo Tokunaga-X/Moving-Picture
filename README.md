@@ -1,23 +1,27 @@
-## 介绍
+Sure, here is the translated text:
 
-学习 React 时做的个人网站，展示个人推荐电影及影评文章，独立编码/设计。
+---
 
-## 现状展示
+## Introduction
+
+A personal website created while learning React, showcasing personally recommended movies and film reviews. Independently coded/designed.
+
+## Current Status
 
 <img src="./public/readme.png" width="70%" />
 
-## 用到的库
+## Libraries Used
 
--   React (Router/Redux,用于项目构建)
--   Lottie (用于页面动画)
--   Swiper (用于轮播图)
--   阿里图标矢量库 (用于图标资源)
--   marker (用于 markdown 展示)
+-   React (Router/Redux, used for project development)
+-   Lottie (used for page animations)
+-   Swiper (used for carousel)
+-   Alibaba Vector Icon Library (used for icon resources)
+-   Marker (used for markdown display)
 -   ...
 
-## 下载本地使用
+## Download and Use Locally
 
 1. npm install
 2. npm run start
 
-TODO：Replace it with next and tailwind css
+TODO: Replace it with Next.js and Tailwind CSS
